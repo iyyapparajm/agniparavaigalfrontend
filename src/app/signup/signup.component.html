@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <p>Hello Noobie ** Sign up Here !!</p>
+  </head>
+  <body>
+    <form>
+      <label for="username">Name</label><br>
+      <input type="text" name="username" id="Username" [(ngModel)]="userName"><br>
+      <label for="password">Password</label><br>
+      <input type="password" name="password" id="Userpassword" [(ngModel)]="userPassword"><br>
+      <label for="conformpassword">Conform Password</label><br>
+      <input type="password" name="conformpassword" id="conformPassword" [(ngModel)]="userConformPassword"><br>
+      <label for="dob">Date Of Birth</label><br>
+      <input type="date" name="dob" id="dateOfBirth" [(ngModel)]="userDob"><br>
+      <label for="address">Address</label><br>
+      <textarea name="address" id="Address" cols="30" rows="10" [(ngModel)]="userAddress"></textarea><br>
+      <input type="button" name="signup" id="signUp" value="SignUp" (click)="signup()"><br>
+    </form>
+    <p>If you are a registered user. Click on login!!</p>
+    <a routerLink="/login">Login</a>
+  </body>
+</html>
